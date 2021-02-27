@@ -1,11 +1,21 @@
 // esta es la función de dolar a yen
 
+const fromYenToPound = function(valueInYen){
+
+    let valueInPound = valueInYen * 0.8/127.9;
+   
+    return valueInPound;
+}
+
+
 const fromDollarToYen = function(valueInDollar){
 
-    let valueInYen = valueInDollar * 127.9 *1.2;
+    let valueInYen = valueInDollar * 127.9 /1.2;
    
     return valueInYen;
 }
+
+
 
 
 // esta es mi función que suma dos números
@@ -29,4 +39,4 @@ console.log(sum(7,3))
 
 // exporta la función para usarla en otros archivos 
 // (similar a la palabra clave `export` cuando se usa webpack)
-module.exports = { sum, fromEuroToDollar, fromDollarToYen };
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
